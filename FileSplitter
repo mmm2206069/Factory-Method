@@ -3,7 +3,7 @@ class MainForm
 {
   TextBox* txtFilePath;
   TextBos* txtFileNumber;
-	SplitterFactory* factory;
+  SplitterFactory* factory;
 public:
 	MainForm(SplitterFactory* factory) {
 		this->factory = factory;
