@@ -1,0 +1,29 @@
+//实现时不依赖具体类
+class MainForm
+{
+  TextBox* txtFilePath;
+  TextBos* txtFileNumber;
+	SplitterFactory* factory;
+public:
+	MainForm(SplitterFactory* factory) {
+		this->factory = factory;
+	}
+	void Button_Click() {
+		string filePath = txtFilePath;
+    int number = atoi(txtFileNumber->getText().c_str());
+    
+    ISplitter* splitter =
+			factory->CreateSplitter(filePath, number);
+		splitter->split();
+	}
+};
+
+//依赖具体类的实现
+/* FileSplitter* splitter = new FileSplitter(filePath, number);
+/* splitter->split();
+/* class FileSplitter{
+/* public:
+/*   void split(){
+/*   ...
+/*   }
+/* };
