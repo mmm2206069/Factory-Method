@@ -1,1 +1,2 @@
-# Factory-Method
+#Factory-Method
+模式定义一个用于创建对象的接口，让子类决定实例化哪一个类。Factory Method使得一个类的实例化延迟（目的：解耦(new 和 具体类的耦合)，手段：虚函数）到子类
