@@ -1,4 +1,4 @@
-//实现时不依赖具体类
+//实现时不依赖具体类（依赖抽象，不依赖实现细节）
 class MainForm
 {
   TextBox* txtFilePath;
